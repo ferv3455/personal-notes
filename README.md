@@ -1,4 +1,4 @@
-# Hextra Starter Template
+# Personal Notes
 
 [![Deploy Hugo site to Pages](https://github.com/imfing/hextra-starter-template/actions/workflows/pages.yaml/badge.svg)](https://github.com/imfing/hextra-starter-template/actions/workflows/pages.yaml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6e83fd88-5ffe-4808-9689-c0f3b100bfe3/deploy-status)](https://app.netlify.com/sites/hextra-starter-template/deploys)
@@ -58,10 +58,10 @@ Pre-requisites: [Hugo](https://gohugo.io/getting-started/installing/), [Go](http
 
 ```shell
 # Clone the repo
-git clone https://github.com/imfing/hextra-starter-template.git
+git clone git@github.com:ferv3455/personal-notes.git
 
 # Change directory
-cd hextra-starter-template
+cd personal-notes
 
 # Start the server
 hugo mod tidy
