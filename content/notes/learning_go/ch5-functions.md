@@ -96,6 +96,17 @@ sort.Slice(items, func(i, j int) bool {
 - This is useful for customizing behavior of a function (an example is building middleware for a web server - refer to Chapter 13)
 
 
+> [!WARNING]
+> As in other languages, Go closures **capture** the variable itself (by reference), rather than copying its value at the time the closure is created. This means that if you modify the variable in the outer scope, or if the loop advances, the closure will see the updated value.
+> For example, the following code will lead to infinite recursion:
+> ```go
+> f = func() (any, error) {
+>     result, err := f()
+>     return result, err
+> }
+> ```
+
+
 
 ## `defer`
 
